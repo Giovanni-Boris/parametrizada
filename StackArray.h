@@ -1,18 +1,18 @@
 #ifndef STACKARRAY_H
 #define STACKARRAY_H
-#define RESIZEFACTOR  20
+#define RESIZEFACTOR 20
 #include "Stack.h"
-template<typename T>
-class StackArray: public Stack<T>{
+template<typename T> class StackArray: public Stack<T>{
   private:
-    T data[];
     int size;//memory size
     T* sp;
-    void resize();
+    //void resize();
+    T* data ;
+
   public:
-    StackArray(int s):size{s},data{new T[s]},sp{data}{};
-    ~StackArray(){delete[]data;};
-    void push (T e);
+    StackArray(int s):size{s},sp{data},data{new T[s]}{};
+    ~StackArray(){delete[] data;}
+    void push(T e);
     void pop();
     T top();
     bool empty();

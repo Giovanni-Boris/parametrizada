@@ -4,7 +4,7 @@ template<typename T>
 void StackArray<T>::push(T e){
   int numElem = sp - data;
   if(numElem == size){
-    resize();
+    //resize();
   }
   *sp = e;
   sp++;
@@ -24,7 +24,7 @@ template<typename T>
 bool StackArray<T>::empty(){
   return sp==data;
 }
-template<typename T>
+/*template<typename T>
 void StackArray<T>::resize(){
   int newSize =size + RESIZEFACTOR;
   T newData[] = new T[newSize];
@@ -39,6 +39,8 @@ void StackArray<T>::resize(){
   sp = newData + numElem;
 
   delete[] oldData;
+};*/
+int main(){
+StackArray<int> c(5);
+c.push(1);
 }
-
-
