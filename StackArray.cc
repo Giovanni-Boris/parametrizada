@@ -15,11 +15,16 @@ void StackArray<T>::push(T e){
     resize();
   }
   *sp = e;
+ 
   sp++;
   //e = 12;
   //4 top(push(S,I) = I)
   std::cout<<"top: "<<top()<<" : e= "<<e<<"\n"; 
   assert(top()==e);
+  //--sp;
+  //6 axioma empty(push(S,I)) = false
+  std::cout<<"NUm elem: "<<sp-data<<"\n";
+  assert(!empty());
 }
 template<typename T>
 void StackArray<T>::pop(){
@@ -66,7 +71,7 @@ int main(){
   StackArray<int> c(2);
   //c.top();
   c.push(1);
-  c.push(2);
+  /*c.push(2);
   c.push(3);
   c.push(4);
   c.print();
