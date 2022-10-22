@@ -8,8 +8,11 @@ StackArray<T>::StackArray(int s){
   sp = data;
   //1 pop(newstack) = newstack
   pop();
-  sp++;
   assert(sp == data);
+  //3 top(newstack) = undefined
+  //top()
+  //sp++;
+  assert((sp - data) == 0);
   //5. assert empty(newstack) = true
   //sp++;
   assert(empty()==true);
@@ -25,7 +28,13 @@ void StackArray<T>::push(T e){
  
   sp++;
 
-  //pop(push(S,I)) = s
+  //2 pop(push(S,I)) = s
+  //pop no elimina  solo retrocede el punteroo
+  pop();
+  std::cout<<"sp :"<<*sp<<" : e="<< e<<"\n";
+  assert(*sp == e);
+  //sp++ debido a que prueba solo en la asercion
+  sp++;
   //e = 12;
   //4 top(push(S,I) = I)
   std::cout<<"top: "<<top()<<" : e= "<<e<<"\n"; 
