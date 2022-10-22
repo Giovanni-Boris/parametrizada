@@ -65,6 +65,9 @@ bool StackArray<T>::empty(){
 }
 template<typename T>
 void StackArray<T>::resize(){
+  //num elemeentos dbe ser igua a size
+  assert(sp-data == size);
+
   int newSize =size + RESIZEFACTOR;
   T* newData= new T[newSize];
   int numElem = sp - data;
@@ -79,6 +82,10 @@ void StackArray<T>::resize(){
   sp = newData + numElem;
   std::cout<<"Size: "<< size<<"\n";
   delete[] oldData;
+  //postcondicion
+  //no se empiezsa en cero sino desde indice del utlimo elemento que se copio
+  assert(sp == newData + numElem);
+
 };
 template<typename T>
 void StackArray<T>::print(){
