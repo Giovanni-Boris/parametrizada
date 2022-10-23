@@ -1,4 +1,7 @@
 #include "StackArray.h"
+#include "Persona.h"
+#include "Profesor.h"
+#include "Alumno.h"
 #include <assert.h>
 #include <iostream>
 template<typename T>
@@ -94,6 +97,8 @@ void StackArray<T>::print(){
     std::cout<<data[i]<<"--->";
   std::cout<<"\n";
 }
+
+
 int main(){
   StackArray<int> c(1);
   //c.top();
@@ -105,4 +110,6 @@ int main(){
   /*std::cout<<"top: "<<c.top()<<"\n";
   c.pop();*/
   c.print();
+  StackArray<Profesor> *stack =  new StackArray<Profesor>(5);
+
 }
