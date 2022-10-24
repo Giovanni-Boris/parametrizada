@@ -11,6 +11,7 @@ StackArray<T>::StackArray(int s){
   sp = data;
   //1 pop(newstack) = newstack
   pop();
+  //sp++;
   assert(sp == data);
   //3 top(newstack) = undefined
   //top()
@@ -100,18 +101,27 @@ void StackArray<T>::print(){
 
 
 int main(){
-  StackArray<int> c(1);
+  //StackArray<int> c(1);
   //c.top();
-  c.push(1);
-  c.push(2);
+  //c.push(1);
+  //c.push(2);
   /*c.push(3);
   c.push(4);
   c.print();
   /*std::cout<<"top: "<<c.top()<<"\n";
   c.pop();*/
-  c.print();
+  //c.print();
   StackArray<Persona*> stack(2);
   stack.push(new Alumno);
   stack.top()->hablar();
+  stack.push(new Profesor);
+  stack.top()->hablar();
+  stack.print();
+  /*StackArray<Persona&> stack1(2);
+  stack1.push(*(new Alumno));
+  stack1.top().hablar();
+  stack1.push(*(new Profesor));
+  stack1.top().hablar();
+  stack1.print();*/
 
 }

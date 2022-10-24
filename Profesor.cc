@@ -3,7 +3,7 @@
 using namespace std;
 #include <string>
 void Profesor::hablar(){
-  cout << "Soy mayor edad";
+  cout << "Soy mayor edad\n";
 }
 
 string Profesor::toString(){
