@@ -110,6 +110,8 @@ int main(){
   /*std::cout<<"top: "<<c.top()<<"\n";
   c.pop();*/
   c.print();
-  StackArray<Profesor> *stack =  new StackArray<Profesor>(5);
+  StackArray<Persona*> stack(2);
+  Persona* a = new Alumno;
+  //stack.push();
 
 }
