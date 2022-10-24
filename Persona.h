@@ -5,7 +5,6 @@ using namespace std;
 class Persona{
   public: 
     virtual void hablar()=0;
-    virtual string toString()=0;
 };
 
 #endif

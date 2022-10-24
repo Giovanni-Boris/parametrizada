@@ -7,7 +7,6 @@ using namespace std;
 class Alumno: public Persona{
   public:
     void hablar();
-    string tostring();
 
 };
 

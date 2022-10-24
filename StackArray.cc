@@ -111,7 +111,7 @@ int main(){
   c.pop();*/
   c.print();
   StackArray<Persona*> stack(2);
-  Persona* a = new Alumno;
-  //stack.push();
+  stack.push(new Alumno);
+  stack.top()->hablar();
 
 }

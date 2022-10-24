@@ -4,10 +4,6 @@ using namespace std;
 void Alumno::hablar(){
   cout<<"Soy menor de edad\n";
 }
-string Alumno::tostring(){
-  return "Soy un alumno";
-}
-
 
 /*
 StackArray.cc:114:20: error: invalid new-expression of abstract class type 'Alumno'
