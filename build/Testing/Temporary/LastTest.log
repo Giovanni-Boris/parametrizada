@@ -1,0 +1,36 @@
+Start testing: Oct 28 15:45 -05
+----------------------------------------------------------
+1/1 Testing: Stack.StackEMpty
+1/1 Test: Stack.StackEMpty
+Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=Stack.StackEMpty" "--gtest_also_run_disabled_tests"
+Directory: /home/boris/Escritorio/parametrizada/build
+"Stack.StackEMpty" start time: Oct 28 15:45 -05
+Output:
+----------------------------------------------------------
+Running main() from /home/boris/Escritorio/parametrizada/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.StackEMpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Stack
+[ RUN      ] Stack.StackEMpty
+sp :0x556e2ea81f20 : e=0x556e2ea81f20
+top: 0x556e2ea81f20 : e= 0x556e2ea81f20
+NUm elem: 1
+sp :0x556e2ea81f40 : e=0x556e2ea81f40
+top: 0x556e2ea81f40 : e= 0x556e2ea81f40
+NUm elem: 2
+[       OK ] Stack.StackEMpty (0 ms)
+[----------] 1 test from Stack (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.StackEMpty" end time: Oct 28 15:45 -05
+"Stack.StackEMpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 28 15:45 -05

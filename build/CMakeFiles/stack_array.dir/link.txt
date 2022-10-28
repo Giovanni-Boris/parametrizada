@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/stack_array.dir/StackArray.cc.o CMakeFiles/stack_array.dir/Alumno.cc.o CMakeFiles/stack_array.dir/Profesor.cc.o -o stack_array  lib/libgtest_main.a lib/libgtest.a 

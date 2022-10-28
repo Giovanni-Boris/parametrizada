@@ -1,0 +1,5 @@
+if(EXISTS "/home/boris/Escritorio/parametrizada/build/stack_array[1]_tests.cmake")
+  include("/home/boris/Escritorio/parametrizada/build/stack_array[1]_tests.cmake")
+else()
+  add_test(stack_array_NOT_BUILT stack_array_NOT_BUILT)
+endif()
