@@ -1,86 +1,84 @@
-Start testing: Oct 28 16:00 -05
+Start testing: Oct 28 16:27 -05
 ----------------------------------------------------------
-1/2 Testing: Stack.StackEMpty
-1/2 Test: Stack.StackEMpty
-Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=Stack.StackEMpty" "--gtest_also_run_disabled_tests"
+1/2 Testing: StackTest.StackEmpty
+1/2 Test: StackTest.StackEmpty
+Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=StackTest.StackEmpty" "--gtest_also_run_disabled_tests"
 Directory: /home/boris/Escritorio/parametrizada/build
-"Stack.StackEMpty" start time: Oct 28 16:00 -05
+"StackTest.StackEmpty" start time: Oct 28 16:27 -05
 Output:
 ----------------------------------------------------------
 Running main() from /home/boris/Escritorio/parametrizada/build/_deps/googletest-src/googletest/src/gtest_main.cc
-Note: Google Test filter = Stack.StackEMpty
+Note: Google Test filter = StackTest.StackEmpty
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from Stack
-[ RUN      ] Stack.StackEMpty
-/home/boris/Escritorio/parametrizada/StackArray.cc:104: Failure
-Expected equality of these values:
-  stack->empty()
-    Which is: true
-  false
-[  FAILED  ] Stack.StackEMpty (0 ms)
-[----------] 1 test from Stack (0 ms total)
-
-[----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (125 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] Stack.StackEMpty
-
- 1 FAILED TEST
-<end of output>
-Test time =   0.14 sec
-----------------------------------------------------------
-Test Failed.
-"Stack.StackEMpty" end time: Oct 28 16:00 -05
-"Stack.StackEMpty" time elapsed: 00:00:00
-----------------------------------------------------------
-
-2/2 Testing: Stack.StackNotEMpty
-2/2 Test: Stack.StackNotEMpty
-Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=Stack.StackNotEMpty" "--gtest_also_run_disabled_tests"
-Directory: /home/boris/Escritorio/parametrizada/build
-"Stack.StackNotEMpty" start time: Oct 28 16:00 -05
-Output:
-----------------------------------------------------------
-Running main() from /home/boris/Escritorio/parametrizada/build/_deps/googletest-src/googletest/src/gtest_main.cc
-Note: Google Test filter = Stack.StackNotEMpty
-[==========] Running 1 test from 1 test suite.
-[----------] Global test environment set-up.
-[----------] 1 test from Stack
-[ RUN      ] Stack.StackNotEMpty
-sp :0x55de6a01a0a0 : e=0x55de6a01a0a0
-top: 0x55de6a01a0a0 : e= 0x55de6a01a0a0
+[----------] 1 test from StackTest
+[ RUN      ] StackTest.StackEmpty
+sp :0x55daa3fea150 : e=0x55daa3fea150
+top: 0x55daa3fea150 : e= 0x55daa3fea150
 NUm elem: 1
-sp :0x55de6a01a0c0 : e=0x55de6a01a0c0
-top: 0x55de6a01a0c0 : e= 0x55de6a01a0c0
-NUm elem: 2
-/home/boris/Escritorio/parametrizada/StackArray.cc:113: Failure
-Expected equality of these values:
-  stack->empty()
-    Which is: false
-  true
-/home/boris/Escritorio/parametrizada/StackArray.cc:114: Failure
-Expected equality of these values:
-  stack->empty()
-    Which is: false
-  true
-[  FAILED  ] Stack.StackNotEMpty (0 ms)
-[----------] 1 test from Stack (0 ms total)
+sp :0x55daa3fea170 : e=0x55daa3fea170
+top: 0x55daa3fea170 : e= 0x55daa3fea170
+NUm elem: 1
+sp :0x55daa3fea190 : e=0x55daa3fea190
+top: 0x55daa3fea190 : e= 0x55daa3fea190
+NUm elem: 1
+[       OK ] StackTest.StackEmpty (0 ms)
+[----------] 1 test from StackTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (78 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] Stack.StackNotEMpty
-
- 1 FAILED TEST
+[==========] 1 test from 1 test suite ran. (6 ms total)
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   0.09 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
-Test Failed.
-"Stack.StackNotEMpty" end time: Oct 28 16:00 -05
-"Stack.StackNotEMpty" time elapsed: 00:00:00
+Test Passed.
+"StackTest.StackEmpty" end time: Oct 28 16:27 -05
+"StackTest.StackEmpty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 28 16:00 -05
+2/2 Testing: StackTest.StackSize
+2/2 Test: StackTest.StackSize
+Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=StackTest.StackSize" "--gtest_also_run_disabled_tests"
+Directory: /home/boris/Escritorio/parametrizada/build
+"StackTest.StackSize" start time: Oct 28 16:27 -05
+Output:
+----------------------------------------------------------
+Running main() from /home/boris/Escritorio/parametrizada/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = StackTest.StackSize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StackTest
+[ RUN      ] StackTest.StackSize
+sp :0x55fffb1a4150 : e=0x55fffb1a4150
+top: 0x55fffb1a4150 : e= 0x55fffb1a4150
+NUm elem: 1
+sp :0x55fffb1a4170 : e=0x55fffb1a4170
+top: 0x55fffb1a4170 : e= 0x55fffb1a4170
+NUm elem: 1
+sp :0x55fffb1a4190 : e=0x55fffb1a4190
+top: 0x55fffb1a4190 : e= 0x55fffb1a4190
+NUm elem: 1
+sp :0x55fffb1a41b0 : e=0x55fffb1a41b0
+top: 0x55fffb1a41b0 : e= 0x55fffb1a41b0
+NUm elem: 2
+sp :0x55fffb1a41d0 : e=0x55fffb1a41d0
+top: 0x55fffb1a41d0 : e= 0x55fffb1a41d0
+NUm elem: 2
+sp :0x55fffb1a41f0 : e=0x55fffb1a41f0
+top: 0x55fffb1a41f0 : e= 0x55fffb1a41f0
+NUm elem: 2
+[       OK ] StackTest.StackSize (0 ms)
+[----------] 1 test from StackTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (8 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"StackTest.StackSize" end time: Oct 28 16:27 -05
+"StackTest.StackSize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 28 16:27 -05
