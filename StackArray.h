@@ -17,6 +17,7 @@ template<typename T> class StackArray: public Stack<T>{
     T top();
     bool empty();
     void print();
+    int length();
 };
 #endif
 

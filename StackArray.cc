@@ -66,6 +66,10 @@ bool StackArray<T>::empty(){
   return sp==data;
 }
 template<typename T>
+int StackArray<T>::length(){
+  return sp-data;
+}
+template<typename T>
 void StackArray<T>::resize(){
   //num elemeentos dbe ser igua a size
   assert(sp-data == size);
@@ -97,30 +101,81 @@ void StackArray<T>::print(){
   std::cout<<"\n";
 }
 
+#include <gtest/gtest.h>
+// Demonstrate some basic assertions.
+/*TEST(Stack,StackEMpty) {
+  Stack<Persona*>* stack = new StackArray<Persona*>(2);
+  ASSERT_EQ(stack->empty(), false);
+  ASSERT_EQ(stack->empty(), false);
 
-int main(){
-  //StackArray<int> c(1);
-  //c.top();
-  //c.push(1);
-  //c.push(2);
-  /*c.push(3);
-  c.push(4);
-  c.print();
-  /*std::cout<<"top: "<<c.top()<<"\n";
-  c.pop();*/
-  //c.print();
-  //StackArray<Persona*> stack(2);
+}
+TEST(Stack,StackNotEMpty) {
+  Stack<Persona*>* stack = new StackArray<Persona*>(2);
+  stack->push(new Alumno);
+  stack->push(new Profesor);
+  // Expect equality.
+  EXPECT_EQ(stack->empty(),true);
+  EXPECT_EQ(stack->empty(),true);
+
+}*/
+
+
+class StackTest : public ::testing::Test {
+ protected:
+  void SetUp() override {
+     stack1->push(new Alumno);
+     stack2->push(new Profesor);
+     stack3->push(new Alumno);
+  }
+
+  // void TearDown() override {}
+  Stack<Persona*>* stack1 = new StackArray<Persona*>(2); 
+  Stack<Persona*>* stack2 = new StackArray<Persona*>(2); 
+  Stack<Persona*>* stack3 = new StackArray<Persona*>(2); 
+};
+
+TEST_F(StackTest,StackEmpty) {
+  EXPECT_EQ(stack1->empty(), false);
+  stack1->pop();
+  EXPECT_EQ(stack1->length(), 0);
+
+}
+TEST_F(StackTest,StackSize) {
+  stack1->push(new Alumno);
+  stack2->push(new Alumno);
+  stack3->push(new Profesor);
+  EXPECT_EQ(stack1->length(),2);
+  stack2->pop();
+  EXPECT_EQ(stack2->length(),1);
+  stack3->pop();
+  stack3->pop();
+  EXPECT_EQ(stack3->length(),0);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*int main(){
   Stack<Persona*>* stack = new StackArray<Persona*>(2);
   stack->push(new Alumno);
   stack->top()->hablar();
   stack->push(new Profesor);
   stack->top()->hablar();
   //stack->print();
-  /*StackArray<Persona&> stack1(2);
+  StackArray<Persona&> stack1(2);
   stack1.push(*(new Alumno));
   stack1.top().hablar();
   stack1.push(*(new Profesor));
   stack1.top().hablar();
-  stack1.print();*/
+  stack1.print();
 
-}
+}*/
