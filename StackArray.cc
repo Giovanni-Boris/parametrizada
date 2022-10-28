@@ -6,13 +6,11 @@
 #include <iostream>
 template<typename T>
 StackArray<T>::StackArray(int s){
+  assert(s > 0);
   size = s;
   data = new T[s];
   sp = data;
-  //1 pop(newstack) = newstack
-  pop();
-  //sp++;
-  assert(sp == data);
+  assert(data != nullptr);
   //3 top(newstack) = undefined
   //top()
   //sp++;
@@ -111,12 +109,13 @@ int main(){
   /*std::cout<<"top: "<<c.top()<<"\n";
   c.pop();*/
   //c.print();
-  StackArray<Persona*> stack(2);
-  stack.push(new Alumno);
-  stack.top()->hablar();
-  stack.push(new Profesor);
-  stack.top()->hablar();
-  stack.print();
+  //StackArray<Persona*> stack(2);
+  Stack<Persona*>* stack = new StackArray<Persona*>(2);
+  stack->push(new Alumno);
+  stack->top()->hablar();
+  stack->push(new Profesor);
+  stack->top()->hablar();
+  //stack->print();
   /*StackArray<Persona&> stack1(2);
   stack1.push(*(new Alumno));
   stack1.top().hablar();
