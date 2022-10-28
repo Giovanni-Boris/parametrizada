@@ -1,3 +1,5 @@
 HelloTest.BasicAssertions 1 0
-Stack.StackEMpty 3 0.00165828
+Stack.StackEMpty 3 0
+Stack.StackNotEMpty 2 0.00617856
 ---
+Stack.StackEMpty
