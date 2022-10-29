@@ -1,11 +1,11 @@
 HelloTest.BasicAssertions 1 0
 Stack.StackEMpty 3 0
 Stack.StackNotEMpty 2 0
-StackTest.StackEmpty 7 0.00347765
-StackTest.StackSize 7 0.00357529
-StackTest.StackPop 6 0.00219672
+StackTest.StackEmpty 8 0.00132636
+StackTest.StackSize 8 0.00348577
+StackTest.StackPop 7 0.00308182
 StackTest.StackTop 0 0
 StackTest.StackTopNewStack 0 0
-StackTest.StackTopStack 1 0.00941336
+StackTest.StackTopStack 2 0.00318857
 ---
 StackTest.StackTopNewStack

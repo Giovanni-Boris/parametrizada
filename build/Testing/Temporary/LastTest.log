@@ -1,10 +1,10 @@
-Start testing: Oct 29 16:41 -05
+Start testing: Oct 29 16:52 -05
 ----------------------------------------------------------
 1/5 Testing: StackTest.StackEmpty
 1/5 Test: StackTest.StackEmpty
 Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=StackTest.StackEmpty" "--gtest_also_run_disabled_tests"
 Directory: /home/boris/Escritorio/parametrizada/build
-"StackTest.StackEmpty" start time: Oct 29 16:41 -05
+"StackTest.StackEmpty" start time: Oct 29 16:52 -05
 Output:
 ----------------------------------------------------------
 Running main() from /home/boris/Escritorio/parametrizada/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -13,26 +13,27 @@ Note: Google Test filter = StackTest.StackEmpty
 [----------] Global test environment set-up.
 [----------] 1 test from StackTest
 [ RUN      ] StackTest.StackEmpty
-sp :0x5583ccd18650 : e=0x5583ccd18650
-top: 0x5583ccd18650 : e= 0x5583ccd18650
+sp :0x5563408b1650 : e=0x5563408b1650
+top: 0x5563408b1650 : e= 0x5563408b1650
 NUm elem: 1
-sp :0x5583ccd18670 : e=0x5583ccd18670
-top: 0x5583ccd18670 : e= 0x5583ccd18670
+sp :0x5563408b1670 : e=0x5563408b1670
+top: 0x5563408b1670 : e= 0x5563408b1670
 NUm elem: 1
-sp :0x5583ccd18690 : e=0x5583ccd18690
-top: 0x5583ccd18690 : e= 0x5583ccd18690
+sp :0x5563408b1690 : e=0x5563408b1690
+top: 0x5563408b1690 : e= 0x5563408b1690
 NUm elem: 1
+DELETING MY POINTERS
 [       OK ] StackTest.StackEmpty (0 ms)
 [----------] 1 test from StackTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (12 ms total)
+[==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.StackEmpty" end time: Oct 29 16:41 -05
+"StackTest.StackEmpty" end time: Oct 29 16:52 -05
 "StackTest.StackEmpty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -40,7 +41,7 @@ Test Passed.
 2/5 Test: StackTest.StackSize
 Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=StackTest.StackSize" "--gtest_also_run_disabled_tests"
 Directory: /home/boris/Escritorio/parametrizada/build
-"StackTest.StackSize" start time: Oct 29 16:41 -05
+"StackTest.StackSize" start time: Oct 29 16:52 -05
 Output:
 ----------------------------------------------------------
 Running main() from /home/boris/Escritorio/parametrizada/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -49,35 +50,36 @@ Note: Google Test filter = StackTest.StackSize
 [----------] Global test environment set-up.
 [----------] 1 test from StackTest
 [ RUN      ] StackTest.StackSize
-sp :0x55d259304650 : e=0x55d259304650
-top: 0x55d259304650 : e= 0x55d259304650
+sp :0x55680d559650 : e=0x55680d559650
+top: 0x55680d559650 : e= 0x55680d559650
 NUm elem: 1
-sp :0x55d259304670 : e=0x55d259304670
-top: 0x55d259304670 : e= 0x55d259304670
+sp :0x55680d559670 : e=0x55680d559670
+top: 0x55680d559670 : e= 0x55680d559670
 NUm elem: 1
-sp :0x55d259304690 : e=0x55d259304690
-top: 0x55d259304690 : e= 0x55d259304690
+sp :0x55680d559690 : e=0x55680d559690
+top: 0x55680d559690 : e= 0x55680d559690
 NUm elem: 1
-sp :0x55d2593046b0 : e=0x55d2593046b0
-top: 0x55d2593046b0 : e= 0x55d2593046b0
+sp :0x55680d5596b0 : e=0x55680d5596b0
+top: 0x55680d5596b0 : e= 0x55680d5596b0
 NUm elem: 2
-sp :0x55d2593046d0 : e=0x55d2593046d0
-top: 0x55d2593046d0 : e= 0x55d2593046d0
+sp :0x55680d5596d0 : e=0x55680d5596d0
+top: 0x55680d5596d0 : e= 0x55680d5596d0
 NUm elem: 2
-sp :0x55d2593046f0 : e=0x55d2593046f0
-top: 0x55d2593046f0 : e= 0x55d2593046f0
+sp :0x55680d5596f0 : e=0x55680d5596f0
+top: 0x55680d5596f0 : e= 0x55680d5596f0
 NUm elem: 2
+DELETING MY POINTERS
 [       OK ] StackTest.StackSize (0 ms)
 [----------] 1 test from StackTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (7 ms total)
+[==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.StackSize" end time: Oct 29 16:41 -05
+"StackTest.StackSize" end time: Oct 29 16:52 -05
 "StackTest.StackSize" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,7 +87,7 @@ Test Passed.
 3/5 Test: StackTest.StackPop
 Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=StackTest.StackPop" "--gtest_also_run_disabled_tests"
 Directory: /home/boris/Escritorio/parametrizada/build
-"StackTest.StackPop" start time: Oct 29 16:41 -05
+"StackTest.StackPop" start time: Oct 29 16:52 -05
 Output:
 ----------------------------------------------------------
 Running main() from /home/boris/Escritorio/parametrizada/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -94,32 +96,33 @@ Note: Google Test filter = StackTest.StackPop
 [----------] Global test environment set-up.
 [----------] 1 test from StackTest
 [ RUN      ] StackTest.StackPop
-sp :0x55b859644650 : e=0x55b859644650
-top: 0x55b859644650 : e= 0x55b859644650
+sp :0x562f4fb1d650 : e=0x562f4fb1d650
+top: 0x562f4fb1d650 : e= 0x562f4fb1d650
 NUm elem: 1
-sp :0x55b859644670 : e=0x55b859644670
-top: 0x55b859644670 : e= 0x55b859644670
+sp :0x562f4fb1d670 : e=0x562f4fb1d670
+top: 0x562f4fb1d670 : e= 0x562f4fb1d670
 NUm elem: 1
-sp :0x55b859644690 : e=0x55b859644690
-top: 0x55b859644690 : e= 0x55b859644690
+sp :0x562f4fb1d690 : e=0x562f4fb1d690
+top: 0x562f4fb1d690 : e= 0x562f4fb1d690
 NUm elem: 1
-sp :0x55b8596446b0 : e=0x55b8596446b0
-top: 0x55b8596446b0 : e= 0x55b8596446b0
+sp :0x562f4fb1d6b0 : e=0x562f4fb1d6b0
+top: 0x562f4fb1d6b0 : e= 0x562f4fb1d6b0
 NUm elem: 1
-sp :0x55b8596446d0 : e=0x55b8596446d0
-top: 0x55b8596446d0 : e= 0x55b8596446d0
+sp :0x562f4fb1d6d0 : e=0x562f4fb1d6d0
+top: 0x562f4fb1d6d0 : e= 0x562f4fb1d6d0
 NUm elem: 2
+DELETING MY POINTERS
 [       OK ] StackTest.StackPop (0 ms)
 [----------] 1 test from StackTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (7 ms total)
+[==========] 1 test from 1 test suite ran. (17 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.StackPop" end time: Oct 29 16:41 -05
+"StackTest.StackPop" end time: Oct 29 16:52 -05
 "StackTest.StackPop" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -127,7 +130,7 @@ Test Passed.
 4/5 Test: StackTest.StackTopNewStack
 Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=StackTest.StackTopNewStack" "--gtest_also_run_disabled_tests"
 Directory: /home/boris/Escritorio/parametrizada/build
-"StackTest.StackTopNewStack" start time: Oct 29 16:41 -05
+"StackTest.StackTopNewStack" start time: Oct 29 16:52 -05
 Output:
 ----------------------------------------------------------
 Running main() from /home/boris/Escritorio/parametrizada/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -138,10 +141,10 @@ Note: Google Test filter = StackTest.StackTopNewStack
 [ RUN      ] StackTest.StackTopNewStack
 stack_array: /home/boris/Escritorio/parametrizada/StackArray.cc:61: T StackArray<T>::top() [with T = Persona*]: Assertion `!empty()' failed.
 <end of output>
-Test time =   0.39 sec
+Test time =   0.48 sec
 ----------------------------------------------------------
 Test Failed.
-"StackTest.StackTopNewStack" end time: Oct 29 16:41 -05
+"StackTest.StackTopNewStack" end time: Oct 29 16:52 -05
 "StackTest.StackTopNewStack" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -149,7 +152,7 @@ Test Failed.
 5/5 Test: StackTest.StackTopStack
 Command: "/home/boris/Escritorio/parametrizada/build/stack_array" "--gtest_filter=StackTest.StackTopStack" "--gtest_also_run_disabled_tests"
 Directory: /home/boris/Escritorio/parametrizada/build
-"StackTest.StackTopStack" start time: Oct 29 16:41 -05
+"StackTest.StackTopStack" start time: Oct 29 16:52 -05
 Output:
 ----------------------------------------------------------
 Running main() from /home/boris/Escritorio/parametrizada/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -158,18 +161,19 @@ Note: Google Test filter = StackTest.StackTopStack
 [----------] Global test environment set-up.
 [----------] 1 test from StackTest
 [ RUN      ] StackTest.StackTopStack
-sp :0x564e96f98600 : e=0x564e96f98600
-top: 0x564e96f98600 : e= 0x564e96f98600
+sp :0x563b27ef4600 : e=0x563b27ef4600
+top: 0x563b27ef4600 : e= 0x563b27ef4600
 NUm elem: 1
-sp :0x564e96f98620 : e=0x564e96f98620
-top: 0x564e96f98620 : e= 0x564e96f98620
+sp :0x563b27ef4620 : e=0x563b27ef4620
+top: 0x563b27ef4620 : e= 0x563b27ef4620
 NUm elem: 1
-sp :0x564e96f98640 : e=0x564e96f98640
-top: 0x564e96f98640 : e= 0x564e96f98640
+sp :0x563b27ef4640 : e=0x563b27ef4640
+top: 0x563b27ef4640 : e= 0x563b27ef4640
 NUm elem: 1
-sp :0x564e96f98660 : e=0x564e96f98660
-top: 0x564e96f98660 : e= 0x564e96f98660
+sp :0x563b27ef4660 : e=0x563b27ef4660
+top: 0x563b27ef4660 : e= 0x563b27ef4660
 NUm elem: 2
+DELETING MY POINTERS
 [       OK ] StackTest.StackTopStack (0 ms)
 [----------] 1 test from StackTest (0 ms total)
 
@@ -180,8 +184,8 @@ NUm elem: 2
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.StackTopStack" end time: Oct 29 16:41 -05
+"StackTest.StackTopStack" end time: Oct 29 16:52 -05
 "StackTest.StackTopStack" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 29 16:41 -05
+End testing: Oct 29 16:52 -05
