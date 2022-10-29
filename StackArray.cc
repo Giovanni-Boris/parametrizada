@@ -129,12 +129,20 @@ class StackTest : public ::testing::Test {
   }
 
   // void TearDown() override {}
+  void TearDown() override {
+    std::cout<< "DELETING MY POINTERS\n";
+    delete stack1;
+    delete stack2;
+    delete stack3;
+  }
   Stack<Persona*>* stack1 = new StackArray<Persona*>(2); 
   Stack<Persona*>* stack2 = new StackArray<Persona*>(2); 
   Stack<Persona*>* stack3 = new StackArray<Persona*>(2); 
+  Stack<Persona*>* stack4 = new StackArray<Persona*>(2); 
 };
 
 TEST_F(StackTest,StackEmpty) {
+  //EMPTY(PUSH(s.i)=false
   EXPECT_EQ(stack1->empty(), false);
   stack1->pop();
   EXPECT_EQ(stack1->length(), 0);
@@ -152,10 +160,30 @@ TEST_F(StackTest,StackSize) {
   EXPECT_EQ(stack3->length(),0);
 
 }
+TEST_F(StackTest, StackPop){
+  stack3->pop();
+  Alumno* al1 = new Alumno;
+  Alumno* al2 = new Alumno;
+  stack3->push(al1);
+  stack3->push(al2);
+  stack3->pop();
+  EXPECT_EQ(stack3->top(), al1);
 
+}
 
-
-
+TEST_F(StackTest, StackTopNewStack){
+  EXPECT_ANY_THROW({
+    //top(newstack) ) undefined
+    stack4->top(); 
+  });
+}
+TEST_F(StackTest, StackTopStack){
+  Alumno* al1 = new Alumno;
+  stack1->push(al1);
+  //top(push(S,I)=I
+  EXPECT_EQ(stack1->top(), al1);
+  
+}
 
 
 
@@ -177,5 +205,4 @@ TEST_F(StackTest,StackSize) {
   stack1.push(*(new Profesor));
   stack1.top().hablar();
   stack1.print();
-
 }*/
